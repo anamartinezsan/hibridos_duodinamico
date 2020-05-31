@@ -1,17 +1,35 @@
+import <img src="img.jpeg" alt="" id="imagen">
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
+  <ion-toolbar style="text-align: center;">
+    <ion-title style="text-align: center;">
+      Historial
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
+  <ion-header collapse="condense">Recientes
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list>
+    <ion-item>
+      <p>
+        Limpiar casa.<br>Excelente servicio<br>XX/XX/XXX
+      </p>
+    </ion-item>
+    <ion-item>
+      <p>
+        Quitar escombro.<br>Muy bueno<br>XX/XX/XXX
+      </p>
+    </ion-item>
+    <ion-item>
+      <p>
+        Cuidar adulto mayor.<br>Recomendado<br>XX/XX/XXX
+      </p>
+    </ion-item>
+    <ion-item>
+      <p>
+        Fontanero.<br>Muy bien<br>XX/XX/XXX
+      </p>
+    </ion-item>
+  </ion-list>
 </ion-content>
