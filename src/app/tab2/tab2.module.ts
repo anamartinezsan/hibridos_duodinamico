@@ -5,6 +5,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+import{Component}from '@angular/core';
+import {AgmCoreModule} from '@agm/core';
+
+
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 
@@ -14,7 +18,11 @@ import { Tab2PageRoutingModule } from './tab2-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab2PageRoutingModule
+    Tab2PageRoutingModule,
+    AgmCoreModule, RouterModule.forChild([{
+            path: '',
+            component: Tab2Page
+        }])
   ],
   declarations: [Tab2Page]
 })

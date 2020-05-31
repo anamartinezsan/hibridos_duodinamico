@@ -1,18 +1,23 @@
 
 <ion-toolbar>
   <ion-buttons slot="start">
-    <ion-menu-button auto-hide="false"></ion-menu-button>
+    <ion-menu-button auto-hide="true"></ion-menu-button>
   </ion-buttons>
-  <ion-searchbar></ion-searchbar>
+  <div class="ion-page" id="main">
+    <ion-header>
+      <ion-searchbar style="text-align: right;align-items: flex-end;"></ion-searchbar>
+    </ion-header>
+   
+  </div>
 </ion-toolbar>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
    
   </ion-header>
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-
-
+  <div id="map">
+  <iframe width="401" height="576" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=401&amp;height=576&amp;hl=en&amp;q=%20Chihuahua%20City+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=daa21f1fdc47594a16235c8b4eb8b635931bda09'></script>
+</div>
   <ion-app>
     <ion-menu side="start" menu-id="first" content-id="main" id="menu">
       <ion-header>
@@ -21,28 +26,25 @@
         </ion-toolbar>
       </ion-header>
       <ion-content>
-        <ion-list>
-          <ion-item>
-            <ion-icon name="settings-outline"></ion-icon>
-            <ion-text>&nbsp;&nbsp;&nbsp;&nbsp; Settings</ion-text>
-          </ion-item>
-          <ion-item>
+        
+        <ion-nav>
+           <ion-item routerLink="../settings/settings.module">
+            <ion-tab-button tab='settings'>
+              <ion-icon name="settings-outline"></ion-icon>
+           <ion-label> Settings</ion-label>
+            </ion-tab-button></ion-item>
+        
+         <a href="../../../settings/settings.module" routerDirection="forward">IR</a>
             <ion-icon name="exit-outline"></ion-icon>
-            <ion-text>&nbsp;&nbsp;&nbsp;&nbsp; Logout</ion-text>
-          </ion-item>
-        </ion-list>
+          <ion-label>Logout</ion-label>
+         
+        </ion-nav>
+
+
+        
       </ion-content>
-      
+    
     </ion-menu>
-  <div class="ion-page" id="main">
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Menu - Basic</ion-title>
-        </ion-toolbar>
-      </ion-header>
-     
-    </div>
-   
   
   </ion-app>
 
