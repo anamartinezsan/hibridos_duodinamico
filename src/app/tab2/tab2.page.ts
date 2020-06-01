@@ -1,5 +1,4 @@
 import { Component,ChangeDetectorRef } from '@angular/core';
-import { MapsAPILoader } from '@agm/core';
 
 @Component({
   selector: 'app-tab2',
