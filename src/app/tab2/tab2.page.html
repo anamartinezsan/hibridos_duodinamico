@@ -1,4 +1,5 @@
 
+<script src="geolocalizacion.js"></script>
 <ion-toolbar>
   <ion-buttons slot="start">
     <ion-menu-button auto-hide="true"></ion-menu-button>
@@ -15,10 +16,14 @@
   <ion-header collapse="condense">
    
   </ion-header>
-  <div id="map">
-  <iframe width="401" height="576" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=401&amp;height=576&amp;hl=en&amp;q=%20Chihuahua%20City+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=daa21f1fdc47594a16235c8b4eb8b635931bda09'></script>
-</div>
-  <ion-app>
+  
+  <section id="ubicacion">
+    <ion-button id="btnObtener">
+      OK
+    </ion-button>
+    https://goo.gl/maps/7QhAuFSut6oHc6Gc7
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d111598.56387736923!2d-106.11159900815417!3d28.662401856621518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1ses!2smx!4v1591166738669!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>  </section>  
+<ion-app>
     <ion-menu side="start" menu-id="first" content-id="main" id="menu">
       <ion-header>
         <ion-toolbar color="primary">
